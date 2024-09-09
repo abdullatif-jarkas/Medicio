@@ -7,23 +7,23 @@ import Img5 from "./../assets/img/departments-5.jpg";
 export const departmentsLinksData = [
   {
     key: "first",
-    text: "first",
+    text: "Cardiology",
   },
   {
     key: "second",
-    text: "second",
+    text: "Neurology",
   },
   {
     key: "third",
-    text: "third",
+    text: "Hepatology",
   },
   {
     key: "fourth",
-    text: "fourth",
+    text: "Pediatrics",
   },
   {
     key: "fifth",
-    text: "fifth",
+    text: "Ophthalmologists",
   },
 ];
 

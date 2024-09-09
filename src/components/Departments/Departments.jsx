@@ -13,9 +13,9 @@ const Departments = ({ links, content }) => {
         <Tab.Container id="left-tabs-example" defaultActiveKey="first">
           <Row className="mt-5">
             <Col lg={3}>
-              <Nav variant="pills" className="flex-lg-column">
+              <Nav variant="pills" className="flex-column">
                 {links.map((link, index) => (
-                  <Nav.Item key={index} className="flex-grow-1 text-center text-lg-start">
+                  <Nav.Item key={index} className="text-start text-lg-start">
                     <Nav.Link
                       className="rounded-0 bg-white third-color fw-bold"
                       eventKey={link.key}

@@ -41,7 +41,7 @@ const Departments = ({ links, content }) => {
                         </p>
                       </Col>
                       <Col lg={4}>
-                        <img src={item.img} className="w-100" />
+                        <img src={item.img} className="w-100 mb-4 mb-lg-0" />
                       </Col>
                     </Row>
                   </Tab.Pane>

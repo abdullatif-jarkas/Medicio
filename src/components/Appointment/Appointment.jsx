@@ -17,10 +17,10 @@ const Appointment = () => {
               <Form.Control type="text" placeholder="Your Name" />
             </Col>
             <Col md={4}>
-              <Form.Control type="email" placeholder="Your Email" />
+              <Form.Control type="email" placeholder="Your Email" className="mt-4 mt-md-0" />
             </Col>
             <Col md={4}>
-              <Form.Control type="tel" placeholder="Your Phone" />
+              <Form.Control type="tel" placeholder="Your Phone" className="mt-4 mt-md-0" />
             </Col>
           </Row>
           <Row className="my-3 pb-2">
@@ -28,7 +28,7 @@ const Appointment = () => {
               <Form.Control type="datetime-local" />
             </Col>
             <Col md={4}>
-              <Form.Select aria-label="Default select example">
+              <Form.Select aria-label="Default select example" className="mt-4 mt-md-0">
                 <option>Open this select menu</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -36,7 +36,7 @@ const Appointment = () => {
               </Form.Select>{" "}
             </Col>
             <Col md={4}>
-              <Form.Select aria-label="Default select example">
+              <Form.Select aria-label="Default select example"className="mt-4 mt-md-0">
                 <option>Open this select menu</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -44,7 +44,7 @@ const Appointment = () => {
               </Form.Select>
             </Col>
           </Row>
-          <Form.Control as="textarea" rows={5} placeholder="Message (Optional)" className="mb-4" />
+          <Form.Control as="textarea" rows={5} placeholder="Message (Optional)" className="mt-4 mt-md-0 mb-4" />
           <div className="form-btn d-flex justify-content-center">
             <MainBtn />
           </div>

@@ -1,27 +1,33 @@
-.navbar a {
-  font-family: "Poppins", sans-serif !important;
-  font-size: 13px;
-}
-.navbar .logo {
-  max-height: 36px;
-  margin-right: 8px;
-}
-.navbar .nav-btn {
-  margin: 0 5px 0 30px;
-}
-.navbar a.active {
-  color: var(--main-color) !important;
+.navbar {
+  a {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 13px;
+  }
+  .logo {
+    max-height: 36px;
+    margin-right: 8px;
+  }
+  a.active {
+    color: var(--main-color) !important;
+  }
 }
 @media screen and (width < 1200px) {
   .offcanvas {
     width: 100% !important;
-    transition: .5s;
-    background: linear-gradient(45deg, black, transparent)
+    transition: 0.5s;
+    background: linear-gradient(45deg, black, transparent);
   }
-  .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link.show {
     color: var(--main-color);
     border: 1px solid;
     border-radius: 0 25px 25px 0;
     padding-left: 16px;
+  }
+}
+@media screen and (width < 568px) {
+  .navbar .logo {
+    max-height: 26px;
+    margin: 0;
   }
 }

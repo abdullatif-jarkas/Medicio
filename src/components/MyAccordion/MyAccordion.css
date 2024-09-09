@@ -1,7 +1,7 @@
-.accordion-button {
+/* .accordion-button {
   padding: 20px;
   border-radius: 5px !important;
-  transition: .5s;
+  transition: 0.5s;
   border-top: 1px solid #ddd;
 }
 .accordion-button::after {
@@ -10,21 +10,56 @@
 .accordion-button.collapsed::after {
   transform: rotate(-90deg) !important;
 }
-.accordion-button:hover {
-  color: var(--main-color);
-}
 .accordion-button:focus {
   background-color: white;
   box-shadow: none;
   border-bottom: 0;
   border-radius: 5px 0 0 5px !important;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: white;
+    border-bottom: 0 !important;
+    color: var(--main-color);
+    border-radius: 5px !important;
+    
+    }
+    .accordion-button:not(.collapsed) {
+  border: 1px solid var(--main-color);
+  border-radius: 5px 0 0 5px !important;
+}
+.accordion-button:is(:active, :focus) {
+  border-bottom: 0 !important;
+  }
+  */
+
+.accordion-button {
+  padding: 20px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.accordion-item {
+  border-radius: 5px;
+}
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid rgb(222, 226, 230);
 }
 .accordion-button:not(.collapsed) {
   background-color: white;
-  border-bottom: 0;
-  border-bottom: 0 !important;
 }
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-button::after {
+  transform: rotate(0deg) !important;
+}
+.accordion-button.collapsed::after {
+  transform: rotate(-90deg) !important;
+}
+
+.accordion-button:hover {
+  color: var(--main-color);
+}
+
 .accordion-button:not(.collapsed) {
-  border: 1px solid var(--main-color);
-  border-radius: 5px 0 0 5px !important;
+  color: var(--main-color);
 }

@@ -28,7 +28,7 @@ const NavBar = ({ logo, links }) => {
             <img className="logo" src={logo} alt="logo" loading="lazy" />
           </Navbar.Brand>
           <div className="nav-content d-flex justify-content-end flex-grow-1">
-          <Navbar.Toggle className="border-0 shadow-none" aria-controls={`offcanvasNavbar-expand-${"xl"}`} />
+          <Navbar.Toggle className="border-0 shadow-none ps-0 pe-1 pe-sm-3" aria-controls={`offcanvasNavbar-expand-${"xl"}`} />
             {/* Start Offcanvas */}
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${"xl"}`}
@@ -38,14 +38,11 @@ const NavBar = ({ logo, links }) => {
             >
               {/* Start Header */}
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${"xl"}`}>
-                  Offcanvas
-                </Offcanvas.Title>
               </Offcanvas.Header>
               {/* End Header */}
               {/* Start Body */}
               <Offcanvas.Body>
-                <Nav className="justify-content-center flex-grow-1 h-100">
+                <Nav className="justify-content-center justify-content-xl-end flex-grow-1 h-100">
                   {/* Links */}
                   {links.map((link, index) => {
                     return link.dropdown ? (

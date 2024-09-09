@@ -1,0 +1,32 @@
+.featured-services .row {
+  row-gap: 1.5rem;
+}
+.featured-services .icon {
+  font-size: 36px;
+  transition: color 0.3s;
+}
+.featured-services .card {
+  transition: .5s;
+}
+.featured-services .card::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  border: 1px solid var(--main-color);
+  transition: .5s;
+  border-radius: 50%;
+  top: -100px;
+  left: -100px;
+  z-index: 0;
+}
+.featured-services .card:hover::after {
+  width: 200%;
+  height: 200%;
+  background-color: var(--main-color);
+}
+.featured-services .card:hover .icon,
+.featured-services .card:hover,
+.featured-services .card:hover h4 {
+  color: white;
+}

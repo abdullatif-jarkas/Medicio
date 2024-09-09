@@ -1,0 +1,50 @@
+.slider {
+  height: 70vh;
+  scroll-margin-top: 100px;
+}
+.carousel-inner {
+  height: 100%;
+}
+.slider .carousel-indicators button {
+  cursor: pointer;
+  background: #fff;
+  overflow: hidden;
+  border: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  opacity: 0.9;
+  transition: 0.3s;
+  box-shadow: 0 5px 10px #ddd;
+}
+.slider .carousel-indicators button.active {
+  opacity: 1;
+  background-color: var(--main-color);
+}
+.slider .carousel-indicators button:hover {
+  opacity: 1;
+}
+.slider .carousel-caption {
+  bottom: 50px;
+  background-color: color-mix(in srgb, #fff, transparent 10%) !important;
+  color: #444;
+  border-top: 4px solid var(--main-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.slider .carousel-control-next-icon,
+.slider .carousel-control-prev-icon {
+  transition: 0.1s;
+  border: 5px solid transparent;
+}
+.slider .carousel-control-next:hover .carousel-control-next-icon,
+.slider .carousel-control-prev:hover .carousel-control-prev-icon {
+  background-color: var(--main-color);
+  font-size: 36px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 10px solid var(--main-color);
+}

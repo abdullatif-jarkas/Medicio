@@ -1,0 +1,48 @@
+.center-slider {
+  .slides {
+    display: flex;
+    height: 300px;
+    gap: 20px;
+    transform: translateX(calc(50% - 140px));
+    .slide {
+      flex-shrink: 0;
+      transition: all 0.9s;
+      height: 200px;
+      position: relative;
+    }
+    .slide.active {
+      z-index: 1;
+    }
+    .slide.active img {
+      transition: .3s;
+      scale: 1.1;
+    }
+    .slide.active::after {
+      content: "";
+      position: absolute;
+      width: 120%;
+      height: 122%;
+      z-index: 6;
+      bottom: 0px;
+      border: 7px solid var(--main-color);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .pagination-btn {
+    display: inline-block;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid var(--main-color);
+  }
+  .pagination-btn.active {
+    background-color: var(--main-color);
+  }
+}

@@ -1,0 +1,9 @@
+.stat {
+  padding: 30px;
+}
+.stat span {
+  color: var(--secondary-text-color);
+}
+.stat .icon {
+  font-size: 48px;
+}

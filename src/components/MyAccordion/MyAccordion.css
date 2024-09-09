@@ -1,0 +1,30 @@
+.accordion-button {
+  padding: 20px;
+  border-radius: 5px !important;
+  transition: .5s;
+  border-top: 1px solid #ddd;
+}
+.accordion-button::after {
+  transform: rotate(0deg) !important;
+}
+.accordion-button.collapsed::after {
+  transform: rotate(-90deg) !important;
+}
+.accordion-button:hover {
+  color: var(--main-color);
+}
+.accordion-button:focus {
+  background-color: white;
+  box-shadow: none;
+  border-bottom: 0;
+  border-radius: 5px 0 0 5px !important;
+}
+.accordion-button:not(.collapsed) {
+  background-color: white;
+  border-bottom: 0;
+  border-bottom: 0 !important;
+}
+.accordion-button:not(.collapsed) {
+  border: 1px solid var(--main-color);
+  border-radius: 5px 0 0 5px !important;
+}

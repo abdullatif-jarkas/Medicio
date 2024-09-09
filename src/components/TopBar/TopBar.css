@@ -1,0 +1,5 @@
+.top-bar {
+  background-color: var(--main-color);
+  color: white;
+  height: 40px;
+}

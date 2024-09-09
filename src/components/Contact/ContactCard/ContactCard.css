@@ -1,0 +1,38 @@
+.contact-card {
+  padding-bottom: 30px !important;
+}
+.contact .contact-card h3 {
+  color: color-mix(in srgb, var(--third-text-color), transparent 20%);
+  font-size: 18px;
+  margin: 10px 0;
+}
+.contact .contact-card p {
+  font-size: 14px;
+}
+.contact .contact-card .icon-container {
+  color: var(--main-color);
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px dotted color-mix(in srgb, var(--main-color), transparent 40%);
+}
+.contact :is(textarea, input) {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--third-text-color);
+  background-color: #fff;
+  border-color: color-mix(in srgb, var(--third-text-color), transparent 80%);
+}
+.contact-submit-btn {
+  color: #fff;
+  background: var(--main-color);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 4px;
+}

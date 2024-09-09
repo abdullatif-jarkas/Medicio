@@ -1,0 +1,14 @@
+.testimonials .carousel-inner {
+  padding: 1rem;
+}
+
+@media screen and (width >= 576px) {
+  .testimonials .carousel-inner {
+    display: flex;
+  }
+  .testimonials .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100% / 3);
+  }
+}

@@ -1,0 +1,93 @@
+.testimonials {
+  .slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .slider-content {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .cards-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+
+  .card-container {
+    flex: 1 0 auto;
+    width: calc(100% / 3); /* Default to 3 cards per slide */
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  .card-text {
+    font-style: italic;
+    margin: 0 15px 0 15px;
+    padding: 20px 20px 60px 20px;
+    background: color-mix(in srgb, #444, transparent 97%);
+    position: relative;
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+  }
+  .t-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  @media (max-width: 768px) {
+    .card-container {
+      width: 100%; /* 1 card per slide on mobile */
+    }
+  }
+  
+  .slider-button {
+    position: absolute;
+    bottom: -0%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .slider-button.prev {
+    left: 10px;
+  }
+
+  .slider-button.next {
+    right: 10px;
+  }
+
+  /* Pagination Dots */
+  .pagination {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .pagination-dot {
+    display: inline-block;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid var(--main-color);
+  }
+
+  .pagination-dot.active {
+    background-color: var(--main-color);
+  }
+}

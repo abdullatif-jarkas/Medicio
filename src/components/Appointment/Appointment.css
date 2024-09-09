@@ -1,0 +1,21 @@
+.appointment {
+  background-color: #f7fcfc;
+}
+.appointment input,
+.appointment select {
+  color: #444;
+  background-color: #fff;
+  border-color: color-mix(in srgb, #444, transparent 80%);
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  padding: 10px !important;
+}
+.appointment .form-control:focus,
+.appointment .form-select:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: var(--main-color);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(63, 188, 192, .5);
+}

@@ -1,0 +1,25 @@
+footer {
+  padding-top: 50px;
+  background-color: #f7fcfc;
+}
+footer .logo {
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+footer .social-icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid color-mix(in srgb, var(--third-text-color), transparent 50%);
+  margin-right: 10px;
+}
+footer h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+}
+footer .footer-links ul a {
+  color: color-mix(in srgb, var(--third-text-color), transparent 30%);
+  display: inline-block;
+  line-height: 1;
+}

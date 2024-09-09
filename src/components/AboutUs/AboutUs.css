@@ -1,0 +1,23 @@
+.about-us {
+  scroll-margin-top: 100px;
+}
+.play-btn {
+  width: 70px;
+  height: 70px;
+  background: radial-gradient(
+    var(--accent-color) 50%,
+    color-mix(in srgb, var(--accent-color), transparent 75%) 52%
+  );
+  background: var(--main-color);
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.about-us ul li svg {
+  font-size: 1.25rem;
+}

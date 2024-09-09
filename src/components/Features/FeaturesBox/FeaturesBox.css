@@ -1,0 +1,25 @@
+.features .features-icon {
+  width: 56px;
+  height: 56px;
+}
+.features-box {
+  cursor: pointer;
+}
+.features-box h4 {
+  transition: color .2s ease-in-out;
+}
+.features-box:hover h4{
+  color: var(--main-color) !important;
+}
+.features-box .features-icon {
+  transition: background-color .2s ease-in-out;
+}
+.features-box svg {
+  transition: color .2s ease-in-out;
+}
+.features-box:hover .features-icon {
+  background-color: var(--main-color);
+}
+.features-box:hover svg {
+  color: white;
+}

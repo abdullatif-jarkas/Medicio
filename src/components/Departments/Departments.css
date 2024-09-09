@@ -1,0 +1,24 @@
+.departments {
+  scroll-margin-top: 100px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: var(--main-color);
+  border-right: 2px solid var(--main-color);
+}
+.nav-pills .nav-link {
+  border-right: 2px solid #ececec;
+}
+.nav-link:focus, .nav-link:hover {
+  color: var(--main-color);
+}
+
+@media screen and (width < 992px) {
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    border-right: 0;
+    border-bottom: 2px solid var(--main-color);
+  }
+  .nav-pills .nav-link {
+    border-right: 0;
+    border-bottom: 2px solid #ececec;
+  }
+}

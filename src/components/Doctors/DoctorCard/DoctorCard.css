@@ -1,0 +1,11 @@
+.doctor-card {
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+.doctor-card:hover {
+  scale: 1.05;
+  box-shadow: 0 0 20px rgba(63, 188, 192, 0.6);
+}
+.doctor-card .doctor-info {
+  padding: 25px 15px;
+}
